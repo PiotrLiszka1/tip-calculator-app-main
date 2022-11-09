@@ -4,4 +4,12 @@
 
 body {
   font-family: "Space Mono", monospace;
+  font-size: 10px;
+  background-color: color.$light-grayish-cyan;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  margin: 30px 20px;
 }
