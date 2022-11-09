@@ -1,3 +1,16 @@
+Link live  https://piotrliszka1.github.io/tip-calculator-app-main/
+
+* Obsługa :
+- wprowadź cenę ,
+- podaj ilość osób,
+- kliknij ile procent.
+
+** Obsługa napiwku niestandardowego :
+- wprowadź cenę,
+- podaj ilość osób,
+- w pole napiwku wpisz cyfry (ilość napiwku),
+- kliknij enter 
+
 # Frontend Mentor - Tip calculator app
 
 ![Design preview for the Tip calculator app coding challenge](./design/desktop-preview.jpg)
