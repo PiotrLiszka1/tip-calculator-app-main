@@ -6,3 +6,8 @@
 @mixin font-space-mono {
   font-family: "Space Mono", monospace;
 }
+
+@mixin input-bg-img {
+  background-position: 10%;
+  background-repeat: no-repeat;
+}

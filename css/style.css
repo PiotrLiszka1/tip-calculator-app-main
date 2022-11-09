@@ -123,4 +123,8 @@ body {
 .tip .tip__btn--color {
   background-color: hsl(185deg, 41%, 84%);
   color: hsl(183deg, 100%, 15%);
+}
+
+.input-people {
+  background-image: url("../images/icon-person.svg");
 }/*# sourceMappingURL=style.css.map */

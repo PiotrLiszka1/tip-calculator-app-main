@@ -53,8 +53,7 @@ body {
     &--text-color {
       background-color: color.$very-light-grayish-cyan;
       background-image: url("../images/icon-dollar.svg");
-      background-position: 10%;
-      background-repeat: no-repeat;
+      @include input-bg-img;
       color: color.$very-dark-cyan;
     }
   }
@@ -99,4 +98,8 @@ body {
     background-color: color.$light-grayish-cyan;
     color: color.$very-dark-cyan;
   }
+}
+
+.input-people {
+  background-image: url("../images/icon-person.svg");
 }
