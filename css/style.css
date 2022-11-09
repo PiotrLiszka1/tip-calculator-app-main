@@ -30,4 +30,55 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 30px 20px;
+}
+
+.box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  min-height: 200px;
+}
+.box--body {
+  background-color: hsl(0deg, 0%, 100%);
+  border-radius: 15px;
+}
+.box__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 20px auto;
+  width: 80%;
+}
+.box__label {
+  font-weight: 700;
+  font-size: 20px;
+}
+.box__label--color {
+  color: hsl(186deg, 14%, 43%);
+}
+.box__input {
+  height: 40px;
+  border-radius: 7px;
+  font-size: 24px;
+  border: none;
+  font-weight: 700;
+  padding: 10px 20px;
+  text-align: right;
+  font-family: "Space Mono", monospace;
+}
+.box__input--text-color {
+  background-color: hsl(189deg, 41%, 97%);
+  background-image: url("../images/icon-dollar.svg");
+  background-position: 10%;
+  background-repeat: no-repeat;
+  color: hsl(183deg, 100%, 15%);
 }/*# sourceMappingURL=style.css.map */

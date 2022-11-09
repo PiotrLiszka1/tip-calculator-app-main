@@ -1,9 +1,10 @@
 @use "frontend-mentor-style";
 @use "colors" as color;
 @use "mini-reset" as *;
+@use "mixins" as *;
 
 body {
-  font-family: "Space Mono", monospace;
+  @include font-space-mono;
   font-size: 10px;
   background-color: color.$light-grayish-cyan;
 }
@@ -12,4 +13,49 @@ body {
   display: flex;
   justify-content: center;
   margin: 30px 20px;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 200px;
+
+  &--body {
+    background-color: color.$white;
+    border-radius: 15px;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    @include center-position;
+  }
+
+  &__label {
+    font-weight: 700;
+    font-size: 20px;
+    &--color {
+      color: color.$dark-grayish-cyan;
+    }
+  }
+
+  &__input {
+    height: 40px;
+    border-radius: 7px;
+    font-size: 24px;
+    border: none;
+    font-weight: 700;
+    padding: 10px 20px;
+    text-align: right;
+    @include font-space-mono;
+
+    &--text-color {
+      background-color: color.$very-light-grayish-cyan;
+      background-image: url("../images/icon-dollar.svg");
+      background-position: 10%;
+      background-repeat: no-repeat;
+      color: color.$very-dark-cyan;
+    }
+  }
 }

@@ -1,0 +1,8 @@
+@mixin center-position {
+  margin: 20px auto;
+  width: 80%;
+}
+
+@mixin font-space-mono {
+  font-family: "Space Mono", monospace;
+}
