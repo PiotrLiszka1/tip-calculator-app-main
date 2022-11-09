@@ -151,3 +151,55 @@ body {
     }
   }
 }
+
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .tittle {
+    margin: 40px;
+  }
+
+  .box {
+    flex-direction: row;
+    width: 80%;
+    margin: 0px 20px;
+    padding: 40px 20px;
+
+    .box__item {
+      margin: 10px;
+    }
+
+    .tip {
+      margin: 10px;
+    }
+    .panel {
+      margin: 0px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .box {
+    width: 70%;
+    .tip {
+      width: 80%;
+    }
+    .panel {
+      width: 50%;
+    }
+  }
+}
+
+@media (min-width: 1440px) {
+  .box {
+    width: 800px;
+  }
+}

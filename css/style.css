@@ -177,4 +177,68 @@ body {
 }
 .panel__reset-btn--color:hover {
   background-color: hsl(185deg, 41%, 84%);
+}
+
+@media (min-width: 768px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .tittle {
+    margin: 40px;
+  }
+  .box {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 80%;
+    margin: 0px 20px;
+    padding: 40px 20px;
+  }
+  .box .box__item {
+    margin: 10px;
+  }
+  .box .tip {
+    margin: 10px;
+  }
+  .box .panel {
+    margin: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+@media (min-width: 1200px) {
+  .box {
+    width: 70%;
+  }
+  .box .tip {
+    width: 80%;
+  }
+  .box .panel {
+    width: 50%;
+  }
+}
+@media (min-width: 1440px) {
+  .box {
+    width: 800px;
+  }
 }/*# sourceMappingURL=style.css.map */
