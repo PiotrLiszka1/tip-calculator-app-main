@@ -1,6 +1,7 @@
 .attribution {
   font-size: 11px;
   text-align: center;
+  margin: 10px auto;
 }
 
 .attribution a {
@@ -48,6 +49,7 @@ body {
   border-radius: 15px;
 }
 .box__item {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -57,6 +59,12 @@ body {
           flex-direction: column;
   margin: 20px auto;
   width: 80%;
+}
+.box__item .error {
+  position: absolute;
+  right: 0;
+  color: red;
+  opacity: 0;
 }
 .box__label {
   font-weight: 700;

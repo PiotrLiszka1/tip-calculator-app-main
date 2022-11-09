@@ -27,9 +27,16 @@ body {
   }
 
   &__item {
+    position: relative;
     display: flex;
     flex-direction: column;
     @include center-position;
+    .error {
+      position: absolute;
+      right: 0;
+      color: red;
+      opacity: 0;
+    }
   }
 
   &__label {
@@ -116,6 +123,7 @@ body {
     justify-content: space-between;
     margin: 30px 0;
   }
+
   &__tittle {
     font-size: 18px;
     &--color {
