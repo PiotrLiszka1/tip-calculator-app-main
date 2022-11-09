@@ -59,3 +59,44 @@ body {
     }
   }
 }
+
+.tip {
+  @include center-position;
+
+  &__tittle {
+    font-size: 20px;
+    color: color.$dark-grayish-cyan;
+  }
+
+  &__btns-box {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  &__btn {
+    width: 120px;
+    padding: 5px 10px;
+    margin: 10px 15px 7px 0;
+    font-weight: 700;
+    font-size: 20px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    @include font-space-mono;
+    transition: background-color 0.4s, color 0.4s;
+    &--btn-color {
+      background-color: color.$very-dark-cyan;
+      color: color.$very-light-grayish-cyan;
+    }
+    &--btn-color:hover {
+      background-color: color.$light-grayish-cyan;
+      color: color.$very-dark-cyan;
+    }
+  }
+
+  .tip__btn--color {
+    background-color: color.$light-grayish-cyan;
+    color: color.$very-dark-cyan;
+  }
+}

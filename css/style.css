@@ -81,4 +81,46 @@ body {
   background-position: 10%;
   background-repeat: no-repeat;
   color: hsl(183deg, 100%, 15%);
+}
+
+.tip {
+  margin: 20px auto;
+  width: 80%;
+}
+.tip__tittle {
+  font-size: 20px;
+  color: hsl(186deg, 14%, 43%);
+}
+.tip__btns-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.tip__btn {
+  width: 120px;
+  padding: 5px 10px;
+  margin: 10px 15px 7px 0;
+  font-weight: 700;
+  font-size: 20px;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Space Mono", monospace;
+  -webkit-transition: background-color 0.4s, color 0.4s;
+  transition: background-color 0.4s, color 0.4s;
+}
+.tip__btn--btn-color {
+  background-color: hsl(183deg, 100%, 15%);
+  color: hsl(189deg, 41%, 97%);
+}
+.tip__btn--btn-color:hover {
+  background-color: hsl(185deg, 41%, 84%);
+  color: hsl(183deg, 100%, 15%);
+}
+.tip .tip__btn--color {
+  background-color: hsl(185deg, 41%, 84%);
+  color: hsl(183deg, 100%, 15%);
 }/*# sourceMappingURL=style.css.map */
