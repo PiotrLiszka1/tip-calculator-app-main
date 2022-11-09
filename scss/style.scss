@@ -1,4 +1,6 @@
 @use "frontend-mentor-style";
+@use "colors" as color;
+@use "mini-reset" as *;
 
 body {
   font-family: "Space Mono", monospace;

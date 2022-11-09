@@ -7,6 +7,15 @@
   color: hsl(228deg, 45%, 44%);
 }
 
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 body {
   font-family: "Space Mono", monospace;
 }/*# sourceMappingURL=style.css.map */
