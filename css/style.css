@@ -121,10 +121,60 @@ body {
   color: hsl(183deg, 100%, 15%);
 }
 .tip .tip__btn--color {
-  background-color: hsl(185deg, 41%, 84%);
+  background-color: hsl(189deg, 41%, 97%);
   color: hsl(183deg, 100%, 15%);
 }
 
 .input-people {
   background-image: url("../images/icon-person.svg");
+}
+
+.panel {
+  margin: 20px auto;
+  width: 80%;
+  background-color: hsl(183deg, 100%, 15%);
+  border-radius: 15px;
+  padding: 10px 20px;
+  min-height: 300px;
+}
+.panel__tip {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 30px 0;
+}
+.panel__tittle {
+  font-size: 18px;
+}
+.panel__tittle--color {
+  color: hsl(189deg, 41%, 97%);
+}
+.panel__price {
+  font-size: 30px;
+}
+.panel__price--color {
+  font-weight: 700;
+  color: hsl(184deg, 14%, 56%);
+}
+.panel__reset-btn {
+  width: 100%;
+  border-radius: 5px;
+  border: none;
+  font-size: 24px;
+  padding: 10px 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 700;
+  -webkit-transition: background-color 0.4s;
+  transition: background-color 0.4s;
+}
+.panel__reset-btn--color {
+  background-color: hsl(184deg, 14%, 56%);
+  color: hsl(183deg, 100%, 15%);
+}
+.panel__reset-btn--color:hover {
+  background-color: hsl(185deg, 41%, 84%);
 }/*# sourceMappingURL=style.css.map */
