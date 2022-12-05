@@ -18,7 +18,7 @@ const resetTip = () => {
     peopleInp.value = ''
     priceInp.value = ''
     customInp.value = ''
-    errorInfo.style.opacity = 0
+    errorInfo.style.display = 'none'
 }
 
 const btnsTips = (e) => {
@@ -29,12 +29,12 @@ const btnsTips = (e) => {
     let sumTip = (priceVal * tips) / peopleVal
 
     if (peopleInp.value === '0' || peopleInp.value === '' || priceInp.value === '' || priceInp.value === '0') {
-        errorInfo.style.opacity = 1
+        errorInfo.style.display = 'flex'
         return  // konczy działanie funkcji
     } else if (sum) {
         priceTip.textContent = `$${Math.floor(sumTip * 100) / 100}`
         priceTotal.textContent = `$${sum.toFixed(2)}`
-        errorInfo.style.opacity = 0
+        errorInfo.style.display = 'none'
     } else {
         priceTotal.textContent = tips
     }
@@ -43,7 +43,7 @@ const btnsTips = (e) => {
 const customInputTip = (e) => {
     if (e.key === 'Enter') {
         if (customInp.value === '0' || peopleInp.value === '' || peopleInp.value === '0' || priceInp.value === '') {
-            errorInfo.style.opacity = 1
+            errorInfo.style.display = 'flex'
             return
         } else {
             const inpVal = (customInp.value / 100)
@@ -54,7 +54,7 @@ const customInputTip = (e) => {
             let sumInpTip = (priceVal * inpVal) / peopleVal
             priceTip.textContent = `$${Math.floor(sumInpTip * 100) / 100}`
             priceTotal.textContent = `$${sumInp.toFixed(2)}`
-            errorInfo.style.opacity = 0
+            errorInfo.style.display = 'none'
         }
     }
 }
